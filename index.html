@@ -6,64 +6,94 @@
   <title>TW Studio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f5dcec; /* ljus rosa bakgrund */
       margin: 0;
       padding: 0;
+      color: #333;
+    }
+    nav {
+      background-color: white;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #faacde;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #e893ce;
     }
     header {
       background-color: #faacde; /* accent rosa */
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 40px 20px 20px; /* mindre padding nedtill */
     }
     header h1 {
       margin: 0;
       font-size: 36px;
+      letter-spacing: 1.2px;
     }
     header p {
       font-size: 18px;
       margin-top: 10px;
     }
+    .shop-button {
+      margin: 20px auto 40px auto;
+      display: inline-block;
+      background-color: #fce6f2; /* ännu ljusare rosa för knapp */
+      color: #faacde;
+      padding: 14px 28px;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 12px;
+      border: 2px solid #faacde;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .shop-button:hover {
+      background-color: #faacde;
+      color: white;
+      border-color: #e893ce;
+      cursor: pointer;
+    }
     .hero {
       text-align: center;
-      padding: 40px 20px;
+      padding: 0 20px 40px 20px;
     }
     .hero img {
       max-width: 300px;
       margin: 15px;
       border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    .shop-button {
-      margin-top: 40px;
-      display: inline-block;
-      background-color: #faacde;
-      color: white;
-      padding: 14px 28px;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: background-color 0.3s ease;
-    }
-    .shop-button:hover {
-      background-color: #e893ce;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop now</a>
+    <a href="about.html">About</a>
+  </nav>
 
   <header>
     <h1>Välkommen till TW Studio</h1>
     <p>Skandinavisk stil möter rosa elegans 💕</p>
   </header>
 
+  <a href="shop.html" class="shop-button">Shop now</a>
+
   <div class="hero">
     <img src="https://via.placeholder.com/300x300?text=T-shirt" alt="T-shirt">
     <img src="https://via.placeholder.com/300x300?text=Hoodie" alt="Hoodie">
-    <br>
-    <a href="shop.html" class="shop-button">Shop now</a>
   </div>
 
 </body>
