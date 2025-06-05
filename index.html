@@ -63,6 +63,58 @@
     main p {
       font-size: 18px;
     }
+
+    /* --- Popup styles --- */
+    .popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      padding: 20px;
+      z-index: 1000;
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .popup h3 {
+      margin-top: 0;
+    }
+
+    .popup input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .popup button {
+      width: 100%;
+      padding: 10px;
+      background-color: #faacde;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .popup .close {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      color: #888;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
@@ -83,6 +135,33 @@
       blending minimal design with everyday elegance.
     </p>
   </main>
+
+  <!-- 👇 Popup-elementet -->
+  <div class="popup" id="newsletterPopup">
+    <div class="close" onclick="closePopup()">×</div>
+    <h3>Nyhetsbrev</h3>
+    <p>Prenumerera för uppdateringar och erbjudanden!</p>
+    <input type="email" placeholder="Din e-post" />
+    <button>Prenumerera</button>
+  </div>
+
+  <!-- 👇 Popup-script -->
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('newsletterPopup').style.display = 'block';
+      }, 3000); // Visa efter 3 sek
+    });
+
+    function closePopup() {
+      document.getElementById('newsletterPopup').style.display = 'none';
+    }
+
+    // Auto-stäng efter 13 sek (3 + 10)
+    setTimeout(() => {
+      closePopup();
+    }, 13000);
+  </script>
 
 </body>
 </html>
