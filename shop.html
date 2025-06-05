@@ -6,13 +6,32 @@
   <title>TW Studio – Shop</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5dcec; /* ljus rosa bakgrund */
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5dcec;
       margin: 0;
       padding: 0;
+      color: #333;
+    }
+    nav {
+      background-color: white;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #faacde;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #e893ce;
     }
     header {
-      background-color: #faacde; /* accent rosa */
+      background-color: #faacde;
       color: white;
       padding: 20px;
       text-align: center;
@@ -29,9 +48,11 @@
       text-decoration: none;
       font-size: 14px;
       font-weight: bold;
+      transition: background-color 0.3s ease;
     }
     .back-button:hover {
       background-color: #f5dcec;
+      cursor: pointer;
     }
     .container {
       max-width: 1000px;
@@ -64,13 +85,22 @@
       padding: 10px 20px;
       text-decoration: none;
       border-radius: 5px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
     }
     .buy-button:hover {
       background-color: #e893ce;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop now</a>
+    <a href="about.html">About</a>
+  </nav>
 
   <header>
     <a href="index.html" class="back-button">← Tillbaka</a>
