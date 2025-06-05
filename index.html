@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TW Studio</title>
   <style>
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5dcec; /* ljus rosa bakgrund */
       margin: 0;
       padding: 0;
+      background-color: #f5dcec;
+      font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #faacde; /* accent rosa */
-      color: white;
+      padding: 60px 20px 20px;
+      background-color: #ffffff;
       text-align: center;
-      padding: 40px 20px 20px;
     }
+
     header h1 {
       margin: 0;
       font-size: 36px;
-      letter-spacing: 1.2px;
+      font-weight: 400;
+      color: #222;
+      letter-spacing: 1px;
     }
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
+
     nav {
-      background-color: white;
-      padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       display: flex;
       justify-content: center;
       gap: 30px;
-      font-weight: 600;
+      background-color: white;
+      padding: 10px 0;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
       font-size: 16px;
-      margin: 20px 0 40px 0;
-      border-radius: 8px;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
     }
+
     nav a {
       text-decoration: none;
       color: #faacde;
+      font-weight: 500;
       transition: color 0.3s ease;
     }
+
     nav a:hover {
-      color: #e893ce;
+      color: #e48cbd;
     }
-    .hero {
+
+    main {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
       text-align: center;
-      padding: 0 20px 40px 20px;
     }
-    .hero img {
-      max-width: 300px;
-      margin: 15px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    main p {
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>TW Studio</h1>
-    <p>Run club workoutclothes pink style</p>
+    <h1>Welcome to TW Studio Sweden</h1>
   </header>
 
   <nav>
@@ -75,10 +77,12 @@
     <a href="about.html">About</a>
   </nav>
 
-  <div class="hero">
-    <img src="https://via.placeholder.com/300x300?text=T-shirt" alt="T-shirt">
-    <img src="https://via.placeholder.com/300x300?text=Hoodie" alt="Hoodie">
-  </div>
+  <main>
+    <p>
+      TW Studio is a Scandinavian brand offering timeless training apparel and accessories,<br>
+      blending minimal design with everyday elegance.
+    </p>
+  </main>
 
 </body>
 </html>
