@@ -2,58 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About TW Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – TW Studio</title>
   <style>
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5dcec;
       margin: 0;
       padding: 0;
+      background-color: #f5dcec;
+      font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
       color: #333;
+      line-height: 1.6;
     }
+
+    header {
+      padding: 60px 20px 20px;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 400;
+      color: #222;
+      letter-spacing: 1px;
+    }
+
     nav {
-      background-color: white;
-      padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       display: flex;
       justify-content: center;
       gap: 30px;
-      font-weight: 600;
+      background-color: white;
+      padding: 10px 0;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
       font-size: 16px;
     }
+
     nav a {
       text-decoration: none;
       color: #faacde;
+      font-weight: 500;
       transition: color 0.3s ease;
     }
+
     nav a:hover {
-      color: #e893ce;
+      color: #e48cbd;
     }
-    header {
-      background-color: #faacde;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-      letter-spacing: 1.1px;
-    }
+
     main {
       max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px 40px 20px;
+      margin: 60px auto;
+      padding: 0 20px;
       background: white;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      line-height: 1.6;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    }
+
+    main h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #faacde;
+      font-weight: 500;
+    }
+
+    main p {
+      margin-bottom: 20px;
       font-size: 18px;
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>About TW Studio</h1>
+  </header>
 
   <nav>
     <a href="index.html">Home</a>
@@ -61,14 +84,17 @@
     <a href="about.html">About</a>
   </nav>
 
-  <header>
-    <h1>About TW Studio</h1>
-  </header>
-
   <main>
-    <p>TW Studio is a newly established small company focusing on high-quality training apparel and accessories. Founded and led by Tilda Wahlén, an elite athlete in track and field, TW Studio combines passion for sports and design innovation.</p>
-    <p>Tilda is currently studying engineering at Chalmers University of Technology, bringing a unique blend of technical expertise and athletic experience to the brand.</p>
-    <p>Our mission is to provide stylish, functional, and sustainable clothing that supports your training goals while offering everyday elegance.</p>
+    <h2>Who we are</h2>
+    <p>
+      TW Studio is a newly founded Scandinavian brand focused on creating stylish, functional, and minimal training apparel.
+    </p>
+    <p>
+      The company is led by <strong>Tilda Wahlén</strong>, an elite track and field athlete and aspiring engineer studying at Chalmers University of Technology.
+    </p>
+    <p>
+      TW Studio blends athletic performance with elegant design, aiming to inspire movement and confidence through thoughtfully crafted clothing.
+    </p>
   </main>
 
 </body>
