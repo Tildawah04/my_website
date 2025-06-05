@@ -7,15 +7,31 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      background-color: #ffe6f0; /* ljusrosa bakgrund */
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #2c3e50;
+      background-color: #ff69b4; /* stark rosa */
       color: white;
       padding: 20px;
       text-align: center;
+      position: relative;
+    }
+    .back-button {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      background-color: white;
+      color: #ff69b4;
+      padding: 8px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .back-button:hover {
+      background-color: #ffe6f0;
     }
     .container {
       max-width: 1000px;
@@ -43,20 +59,21 @@
     .buy-button {
       display: inline-block;
       margin-top: 10px;
-      background-color: #2c3e50;
+      background-color: #ff69b4;
       color: white;
       padding: 10px 20px;
       text-decoration: none;
       border-radius: 5px;
     }
     .buy-button:hover {
-      background-color: #1a252f;
+      background-color: #e055a1;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <a href="index.html" class="back-button">← Tillbaka</a>
     <h1>TW Studio – Shop</h1>
   </header>
 
