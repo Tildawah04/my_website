@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TW Studio</title>
   <style>
+    /* Dina tidigare CSS-regler här... */
+
     body {
       margin: 0;
       padding: 0;
@@ -52,67 +54,13 @@
     main {
       max-width: 800px;
       margin: 60px auto;
-      padding: 40px 20px;
+      padding: 0 20px;
       background: white;
       border-radius: 12px;
+      padding: 40px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
       text-align: center;
-    }
-
-    main p {
       font-size: 18px;
-    }
-
-    /* --- Popup styles --- */
-    .popup {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 300px;
-      background-color: white;
-      border: 1px solid #ccc;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-      padding: 20px;
-      z-index: 1000;
-      display: none;
-      animation: fadeIn 0.5s ease-in-out;
-    }
-
-    .popup h3 {
-      margin-top: 0;
-    }
-
-    .popup input[type="email"] {
-      width: 100%;
-      padding: 8px;
-      margin: 10px 0;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-
-    .popup button {
-      width: 100%;
-      padding: 10px;
-      background-color: #faacde;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .popup .close {
-      position: absolute;
-      top: 6px;
-      right: 10px;
-      font-size: 18px;
-      cursor: pointer;
-      color: #888;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
 
     /* Footer CSS */
@@ -164,9 +112,13 @@
       color: #faacde;
     }
 
+    .social-icons a {
+      display: inline-block;
+      margin-right: 16px;
+    }
+
     .social-icons a img {
       width: 24px;
-      margin-right: 16px;
       vertical-align: middle;
       filter: brightness(0) invert(1);
     }
@@ -181,17 +133,6 @@
       flex-wrap: wrap;
       gap: 10px;
     }
-
-    .bottom-row button {
-      background-color: #8f44fd;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 9999px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
   </style>
 </head>
 <body>
@@ -213,34 +154,7 @@
     </p>
   </main>
 
-  <!-- 👇 Popup-elementet -->
-  <div class="popup" id="newsletterPopup">
-    <div class="close" onclick="closePopup()">×</div>
-    <h3>Nyhetsbrev</h3>
-    <p>Prenumerera för uppdateringar och erbjudanden!</p>
-    <input type="email" placeholder="Din e-post" />
-    <button>Prenumerera</button>
-  </div>
-
-  <!-- 👇 Popup-script -->
-  <script>
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        document.getElementById('newsletterPopup').style.display = 'block';
-      }, 3000); // Visa efter 3 sek
-    });
-
-    function closePopup() {
-      document.getElementById('newsletterPopup').style.display = 'none';
-    }
-
-    // Auto-stäng efter 13 sek (3 + 10)
-    setTimeout(() => {
-      closePopup();
-    }, 13000);
-  </script>
-
-  <!-- 👇 Footer -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-section">
@@ -260,14 +174,17 @@
         </ul>
       </div>
       <div class="footer-section social-icons">
-        <a href="#"><img src="tiktok-icon.svg" alt="TikTok"></a>
-        <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
+        <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@yourusername" target="_blank" rel="noopener">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/TikTok_logo_2021.svg" alt="TikTok">
+        </a>
       </div>
     </div>
 
     <div class="bottom-row">
       <p>© 2025 TW Studio. All rights reserved.</p>
-      <button>❤️ Follow on shop</button>
     </div>
   </footer>
 
